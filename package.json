@@ -1,22 +1,16 @@
 {
-  "name": "nuxt-app",
-  "private": true,
-  "type": "module",
+  "name": "rbto",
+  "version": "1.0.0",
+  "description": "",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "frontend": "cd apps/frontend && pnpm run dev --open",
+    "backend": "cd apps/backend && pnpm run dev",
+    "dev": "concurrently \"pnpm run frontend\" \"pnpm run backend\""
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "@vueform/nuxt": "^1.4.0",
-    "@vueform/vueform": "^1.8.0",
-    "nuxt": "^3.10.2",
-    "vue": "^3.4.19",
-    "vue-router": "^4.2.5"
-  },
-  "devDependencies": {
-    "@nuxtjs/tailwindcss": "^6.11.4"
+    "concurrently": "^8.2.2"
   }
 }

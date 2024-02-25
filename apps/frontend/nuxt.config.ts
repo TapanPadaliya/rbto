@@ -2,4 +2,5 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxtjs/tailwindcss", "@vueform/nuxt"],
+  plugins: ['~/plugins/toastification.client.js', ]
 });
